@@ -37,13 +37,3 @@ output "app_service_default_hostname" {
   description = "Default hostname for the web app."
   value       = azurerm_linux_web_app.main.default_hostname
 }
-
-output "key_vault_id" {
-  description = "ID of the Key Vault."
-  value       = azurerm_key_vault.main.id
-}
-
-output "key_vault_uri" {
-  description = "URI of the Key Vault."
-  value       = azurerm_key_vault.main.vault_uri
-}
